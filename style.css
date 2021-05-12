@@ -1,8 +1,27 @@
 <style>
-      a {
-        color: black;
-        text-decoration-line: none;
-      }
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
       body {
         margin: 5%;
       }
@@ -14,6 +33,7 @@
         margin: 0px;
         padding: 10px;
       }
+      
       #grid ol {
         border-right: 1px solid gray;
         width: 100px;
@@ -22,7 +42,7 @@
       }
       #grid {
         display: grid;
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 200px 800px;
       }
       #article {
         padding-left: 30px;
@@ -47,6 +67,7 @@
       @media (max-width: 800px) {
         #grid {
           display: block;
+          
         }
         #grid ol {
           border-right: 0px;
